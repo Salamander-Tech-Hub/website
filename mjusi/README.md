@@ -2,17 +2,6 @@
 
 A modern, responsive landing page built with React, TypeScript, and Tailwind CSS. Salamander is designed to showcase team members, services, and provide a platform for user engagement through blogs and contact forms.
 
-## Team Members
-
-- **Kevin Mongare** - kmongar4@gmail.com
-- **Fortune Maweu** - fortunemuoki@gmail.com
-- **Ngeta John** - jpngeta@gmail.com
-- **Fadhili Ibrahim** - ibrahimfadhili46@gmail.com
-
-## Live Repository
-
-[https://github.com/kevmongare/landing-page-v2.git](https://github.com/kevmongare/landing-page-v2.git)
-
 ## Tech Stack
 
 - **Frontend Framework:** React 19.2.0
