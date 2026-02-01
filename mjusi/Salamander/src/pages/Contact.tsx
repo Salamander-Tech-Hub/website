@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Bg from '../../public/contact-component.png'
+const Bg = "/contact-component.png";
 import NavBar from '../components/Navbar';
 
 interface ContactForm {
@@ -35,7 +35,7 @@ const ContactSection: React.FC = () => {
 
   return (
     <section className="min-h-screen bg-black text-white py-16 px-4">
-        <NavBar/>
+      <NavBar />
       <div className="container mx-auto max-w-6xl mt-26">
         {/* Header Section */}
         <div className="text-center mb-16">
@@ -162,12 +162,12 @@ const ContactSection: React.FC = () => {
           <div className="bg-[#FFED00] backdrop-blur-sm rounded-2xl p-8 border border-gray-800 h-full">
             <div className="text-center h-full flex flex-col justify-center mx-auto">
               <h3 className="text-2xl font-bold mb-8 text-gray-900">Follow us on</h3>
-               <div className='items-center justify-center mx-auto'>
-                    <img src={Bg} alt="Social Media" className='h-70'/>
-                </div>
+              <div className='items-center justify-center mx-auto'>
+                <img src={Bg} alt="Social Media" className='h-70' />
+              </div>
 
-                
-            
+
+
 
               {/* Additional Info */}
               <div className="mt-12 text-gray-900">
@@ -189,11 +189,11 @@ const ContactSection: React.FC = () => {
             </div>
             <div>
               <h4 className="font-semibold mb-2" style={{ color: '#FFED00' }}>Phone</h4>
-              <p>+1 (555) 123-4567</p>
+              <p>+254 717600514</p>
             </div>
             <div>
               <h4 className="font-semibold mb-2" style={{ color: '#FFED00' }}>Office</h4>
-              <p>123 Tech Street, Digital City</p>
+              <p>Nairobi, Kenya</p>
             </div>
           </div>
         </div>

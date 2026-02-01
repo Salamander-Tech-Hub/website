@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@theme {
+    --color-primary: #FDE047;
+    --color-background-light: #F8FAFC;
+    --color-background-dark: #020617;
+    --color-accent-dark: #0f172a;
+
+    --font-display: "DM Serif Display", serif;
+    --font-sans: "Inter", sans-serif;
+}
+
+@layer utilities {
+    .text-glow {
+        text-shadow: 0 0 20px rgba(253, 224, 71, 0.3);
+    }
+}

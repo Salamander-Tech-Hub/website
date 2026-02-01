@@ -1,5 +1,6 @@
 import NavBar from "../components/Navbar";
 import { Link } from "react-router-dom";
+import TextType from "../components/TextType/TextType";
 
 const MainPage = () => {
   return (
@@ -13,7 +14,7 @@ const MainPage = () => {
             backgroundImage: "url('data:image/svg+xml,%3Csvg width=\"60\" height=\"104\" viewBox=\"0 0 60 104\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M30 0L60 17.3205V51.9615L30 69.282L0 51.9615V17.3205L30 0Z M30 104L0 86.6795V51.9615L30 34.641L60 51.9615V86.6795L30 104Z\" fill=\"%231a1a1a\" fill-opacity=\"0.2\" fill-rule=\"evenodd\"/%3E%3C/svg%3E')",
             backgroundRepeat: "repeat"
           }}></div>
-          
+
           {/* Gradient Overlay */}
           <div className="absolute top-0 left-0 w-1/2 h-full z-0" style={{
             background: "linear-gradient(90deg, rgba(5,5,5,0) 0%, rgba(5,5,5,1) 80%)"
@@ -24,7 +25,15 @@ const MainPage = () => {
               {/* Left Content */}
               <div className="flex flex-col space-y-8">
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tighter leading-[1.1]">
-                  <span className="text-[#FCD34D]" style={{ textShadow: "0 0 10px rgba(244, 208, 63, 0.5)" }}>Build. Burn.</span><br/>
+                  <span className="text-[#FCD34D]" style={{ textShadow: "0 0 10px rgba(244, 208, 63, 0.5)" }}>
+                    <TextType
+                      text={["Build.", "Burn.", "Build. Burn."]}
+                      typingSpeed={100}
+                      deletingSpeed={50}
+                      loop={true}
+                      showCursor={true}
+                    />
+                  </span><br />
                   <span className="text-white">Evolve.</span>
                 </h1>
                 <p className="text-lg md:text-xl text-gray-400 max-w-lg leading-relaxed">
@@ -34,7 +43,7 @@ const MainPage = () => {
                   <Link to="/contact" className="inline-flex justify-center items-center bg-yellow-300 text-black px-8 py-4 rounded-sm font-bold hover:bg-white transition-all duration-300 shadow-[0_0_15px_rgba(244,208,63,0.4)] hover:shadow-white/20">
                     Book a consultation
                   </Link>
-                  <a href="https://github.com/kevmongare/landing-page-v2.git" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center bg-transparent border border-white/20 text-yellow-300 px-8 py-4 rounded-sm font-semibold hover:border-yellow-300 hover:bg-yellow-300/10 transition-all duration-300">
+                  <a href="https://github.com/Salamander-Tech-Hub" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center items-center bg-transparent border border-white/20 text-yellow-300 px-8 py-4 rounded-sm font-semibold hover:border-yellow-300 hover:bg-yellow-300/10 transition-all duration-300">
                     View our GitHub <span className="ml-2">→</span>
                   </a>
                 </div>
@@ -43,8 +52,8 @@ const MainPage = () => {
               {/* Right - Image */}
               <div className="relative flex justify-center lg:justify-end items-center">
                 <div className="absolute inset-0 bg-yellow-300 blur-[100px] opacity-10 rounded-full scale-75"></div>
-                <img alt="Digital Salamander Low Poly Art" 
-                  className="relative z-10 w-full max-w-lg object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700 ease-out" 
+                <img alt="Digital Salamander Low Poly Art"
+                  className="relative z-10 w-full max-w-lg object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700 ease-out"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBGo5GKWajy6Zkn9jSdyDVK6eTLOJvxOWUdcB14lf475yq6ibTO76UCgs5nHVkoShlLxyptCA8O6yS5Ms4LTGrogXoyO67fyi7DDbqs5T71VpLRiuq4P_u-spHAChjU8gb848xRDfJOi0hS61g4G2z7XajMowDHWxvZYyAR6QqQl7YcwgBwlymwVuV3dwHjKo8IPeHryoEFuM3xM5XKxMg9u8YXlMV1rK32avdlLSvmnD3Js-YBUep0k7DhhegFgCqrJJOYWW8i0if" />
               </div>
             </div>
@@ -426,7 +435,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ label, title, description, tags, image }) => {
   return (
-    <article 
+    <article
       className="rounded-md overflow-hidden flex flex-col h-full group"
       style={{
         transition: "all 0.3s ease",
@@ -458,13 +467,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ label, title, description, ta
         <p className="text-sm text-gray-400 mb-6 flex-grow">{description}</p>
         <div className="flex flex-wrap gap-2 mt-auto">
           {tags.map((tag, idx) => (
-            <span 
+            <span
               key={idx}
-              className={`text-[10px] font-mono px-2 py-1 rounded ${
-                idx === 0 
-                  ? "border border-yellow-300/30 text-yellow-300 bg-yellow-300/5" 
-                  : "border border-white/10 text-gray-400"
-              }`}
+              className={`text-[10px] font-mono px-2 py-1 rounded ${idx === 0
+                ? "border border-yellow-300/30 text-yellow-300 bg-yellow-300/5"
+                : "border border-white/10 text-gray-400"
+                }`}
             >
               {tag}
             </span>
