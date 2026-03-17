@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
-import MainPage from "./pages/Hero";
+import MainPage from "./pages/home";
 import Contact from "./pages/Contact";
 import AboutPage from "./pages/About";
 import BlogPage from "./pages/Blog";

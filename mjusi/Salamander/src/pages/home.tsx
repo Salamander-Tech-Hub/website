@@ -45,7 +45,7 @@ const MainPage = () => {
                   High-end developer services for ambitious teams. We build battle-tested software and contribute to the global open-source ecosystem.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                  <ThemeButton to="/contact" variant="primary">Book a consultation</ThemeButton>
+                  <ThemeButton to="/contact" variant="primary">View our shop</ThemeButton>
                   <ThemeButton href="https://github.com/Salamander-Tech-Hub" variant="secondary" newTab>View our GitHub →</ThemeButton>
                 </div>
               </div>
