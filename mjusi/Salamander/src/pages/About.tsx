@@ -5,14 +5,15 @@ import ThemeCard from '../components/ThemeCard';
 import ThemeButton from '../components/ThemeButton';
 import MediaPlaceholder from '../components/MediaPlaceholder';
 
-import andrewKimImg from '../assets/team/andrew-kim-j.svg';
-import sharonMurugiImg from '../assets/team/sharon-murugi.svg';
-import adrianCharlesImg from '../assets/team/adrian-charles.svg';
-import randyLuttaImg from '../assets/team/randy-lutta.svg';
-import sidneyBarakaImg from '../assets/team/sidney-baraka.svg';
+import andrewKimImg from '../assets/team/andi.jpeg';
+import sharonMurugiImg from '../assets/team/sharon.jpeg';
+import adrianCharlesImg from '../assets/team/adrian.jpeg';
+import randyLuttaImg from '../assets/team/randy.jpeg';
+import sidneyBarakaImg from '../assets/team/sidney.png';
 import steveKingoroImg from '../assets/team/steve-kingoro.svg';
 import christianTazmaImg from '../assets/team/christian-tazma.svg';
-import charlesMbuguaImg from '../assets/team/charles-mbugua.svg';
+import charlesMbuguaImg from '../assets/team/charles.jpeg';
+import jeniferMbalaImg from '../assets/team/jenifer_mbala.jpeg';
 
 interface TeamMember {
   name: string;
@@ -50,6 +51,7 @@ const AboutPage: React.FC = () => {
     { name: 'Adrian Charles', role: 'Partnerships and Outreach Lead', bio: 'Builds and maintains partner relationships and outreach programs.', avatar: adrianCharlesImg, socials: [{ url: 'https://linkedin.com', label: 'LinkedIn' }] },
     { name: 'Randy Lutta', role: 'Team Member', bio: 'Contributes across features and community initiatives.', avatar: randyLuttaImg, socials: [{ url: 'https://github.com', label: 'GitHub' }] },
     { name: 'Sidney Baraka', role: 'Community Manager', bio: 'Organizes events and supports community contributors.', avatar: sidneyBarakaImg, socials: [{ url: 'https://twitter.com', label: 'Twitter' }] },
+    { name: 'Jenifer Mbala', role: 'Events Planner & Manager', bio: 'Plans and runs Salamander events, meetups, and community programs end to end.', avatar: jeniferMbalaImg, socials: [{ url: 'https://linkedin.com', label: 'LinkedIn' }] },
     { name: 'Steve Kingoro', role: 'Team Member', bio: 'Works on integrations and project polish.', avatar: steveKingoroImg, socials: [{ url: 'https://linkedin.com', label: 'LinkedIn' }] },
     { name: 'Christian Tazma', role: 'Open Source Projects Lead', bio: 'Coordinates open-source initiatives and contributor workflows.', avatar: christianTazmaImg, socials: [{ url: 'https://github.com', label: 'GitHub' }] },
     { name: 'Charles Mbugua', role: 'Maintainer', bio: 'Maintains core repos and reviews community PRs.', avatar: charlesMbuguaImg, socials: [{ url: 'https://github.com', label: 'GitHub' }] },
@@ -288,7 +290,7 @@ const AboutPage: React.FC = () => {
               <a className="hover:text-primary transition-colors" href="#">Security</a>
               <a className="hover:text-primary transition-colors" href="#">Status</a>
             </div>
-            <p className="text-sm text-slate-600">© 2025 Salamander Tech Hub. Built with code.</p>
+            <p className="text-sm text-slate-600">© 2026 Salamander Tech Hub. Built with code.</p>
           </div>
         </div>
       </footer>
